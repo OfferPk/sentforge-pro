@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#111927" />
+    </linearGradient>
+    <linearGradient id="primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Grid overlay -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="140" x2="1200" y2="140" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="280" x2="1200" y2="280" />
+    <line x1="0" y1="350" x2="1200" y2="350" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="490" x2="1200" y2="490" />
+    <line x1="0" y1="560" x2="1200" y2="560" />
+    <line x1="0" y1="630" x2="1200" y2="630" />
+  </g>
+
+  <!-- Top Navigation Header -->
+  <rect x="30" y="25" width="1140" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="55" cy="55" r="8" fill="#ef4444" />
+  <circle cx="75" cy="55" r="8" fill="#f59e0b" />
+  <circle cx="95" cy="55" r="8" fill="#10b981" />
+  <text x="125" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700">SENTForge Pro</text>
+  <text x="270" y="60" fill="#94a3b8" font-family="monospace" font-size="13">SAE J2716 APR2016 (SENT) &amp; Short PWM Studio [v1.0.0]</text>
+  <rect x="940" y="38" width="210" height="34" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+  <text x="955" y="60" fill="#10b981" font-family="monospace" font-size="12" font-weight="600">● 10/10 PASS Normative</text>
+
+  <!-- Left Column: Synthesizer & Timing Waveform -->
+  <rect x="30" y="105" width="550" height="565" rx="12" fill="#131d2e" stroke="#1e293b" stroke-width="1" />
+  <text x="50" y="140" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="700">Sensor Transmission Parameters</text>
+
+  <!-- Form Fields -->
+  <rect x="50" y="165" width="160" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Clock Tick (us)</text>
+  <text x="65" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">3.00 us (Nominal)</text>
+
+  <rect x="225" y="165" width="200" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="240" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Sensor Profile</text>
+  <text x="240" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">Dual 12-Bit Channels</text>
+
+  <rect x="440" y="165" width="120" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="455" y="185" fill="#94a3b8" font-family="sans-serif" font-size="11">Status Nibble</text>
+  <text x="455" y="205" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">0x0 (Normal)</text>
+
+  <rect x="50" y="225" width="245" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">Fast Channel 1 (Throttle Main)</text>
+  <text x="65" y="265" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">3120 (0xC30, 76.2%)</text>
+
+  <rect x="315" y="225" width="245" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="330" y="245" fill="#94a3b8" font-family="sans-serif" font-size="11">Fast Channel 2 (Complement)</text>
+  <text x="330" y="265" fill="#f8fafc" font-family="monospace" font-size="13" font-weight="600">975 (0x3CF, 23.8%)</text>
+
+  <!-- Pulse Waveform Box -->
+  <text x="50" y="305" fill="#38bdf8" font-family="sans-serif" font-size="13" font-weight="700">Falling-Edge Timing Waveform (SAE J2716)</text>
+  <rect x="50" y="320" width="510" height="140" rx="8" fill="#000000" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Waveform pulse bars -->
+  <!-- Calibration: 56 ticks -->
+  <rect x="65" y="350" width="60" height="90" rx="4" fill="#8b5cf6" />
+  <text x="80" y="390" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">SYNC</text>
+  <text x="85" y="415" fill="#e2e8f0" font-family="monospace" font-size="10">56t</text>
+
+  <!-- Status: 12 ticks -->
+  <rect x="130" y="395" width="30" height="45" rx="4" fill="#f59e0b" />
+  <text x="138" y="420" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">0</text>
+
+  <!-- Data 1: 0xC -> 24 ticks -->
+  <rect x="165" y="375" width="40" height="65" rx="4" fill="#38bdf8" />
+  <text x="178" y="410" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">C</text>
+
+  <!-- Data 2: 0x3 -> 15 ticks -->
+  <rect x="210" y="390" width="32" height="50" rx="4" fill="#38bdf8" />
+  <text x="222" y="418" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">3</text>
+
+  <!-- Data 3: 0x0 -> 12 ticks -->
+  <rect x="247" y="395" width="28" height="45" rx="4" fill="#38bdf8" />
+  <text x="257" y="420" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">0</text>
+
+  <!-- Data 4: 0x3 -> 15 ticks -->
+  <rect x="280" y="390" width="32" height="50" rx="4" fill="#38bdf8" />
+  <text x="292" y="418" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">3</text>
+
+  <!-- Data 5: 0xC -> 24 ticks -->
+  <rect x="317" y="375" width="40" height="65" rx="4" fill="#38bdf8" />
+  <text x="330" y="410" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">C</text>
+
+  <!-- Data 6: 0xF -> 27 ticks -->
+  <rect x="362" y="370" width="44" height="70" rx="4" fill="#38bdf8" />
+  <text x="378" y="410" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">F</text>
+
+  <!-- CRC-4: 0x5 -> 17 ticks -->
+  <rect x="411" y="388" width="35" height="52" rx="4" fill="#10b981" />
+  <text x="423" y="415" fill="#000000" font-family="monospace" font-size="10" font-weight="bold">5</text>
+
+  <!-- Pause Pulse: 73 ticks -->
+  <rect x="451" y="360" width="90" height="80" rx="4" fill="#475569" />
+  <text x="475" y="400" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">PAUSE</text>
+  <text x="485" y="418" fill="#cbd5e1" font-family="monospace" font-size="9">73t</text>
+
+  <!-- Frame Metrics Box -->
+  <rect x="50" y="480" width="510" height="95" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <text x="65" y="505" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="bold">Transmission Verification Metrics</text>
+  <text x="65" y="530" fill="#94a3b8" font-family="monospace" font-size="11">Total Frame Period: <tspan fill="#38bdf8">282 Ticks</tspan> | Frame Duration: <tspan fill="#38bdf8">846.0 us</tspan> (Fixed Rate 1.18 kHz)</text>
+  <text x="65" y="555" fill="#94a3b8" font-family="monospace" font-size="11">CRC-4 (x^4+x^3+x^2+1): <tspan fill="#10b981">0x5 (Valid Seed 0x5)</tspan> | Status Comm: <tspan fill="#f59e0b">0x0 (Pass)</tspan></text>
+
+  <rect x="50" y="605" width="510" height="45" rx="8" fill="url(#primary)" />
+  <text x="185" y="633" fill="#000000" font-family="sans-serif" font-size="14" font-weight="700">Synthesize &amp; Audit SENT Bitstream</text>
+
+  <!-- Right Column: 10-Point Normative Auditor -->
+  <rect x="610" y="105" width="560" height="565" rx="12" fill="#131d2e" stroke="#1e293b" stroke-width="1" />
+  <text x="635" y="140" fill="#10b981" font-family="sans-serif" font-size="16" font-weight="700">SAE J2716 APR2016 Normative Auditor</text>
+  <text x="635" y="160" fill="#94a3b8" font-family="sans-serif" font-size="11">Automotive Sensor Conformance &amp; Clock Stability Checks</text>
+
+  <!-- 10 Audit Rules List -->
+  <g transform="translate(635, 175)">
+    <!-- Rule 1 -->
+    <rect x="0" y="0" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="19" r="7" fill="#10b981" />
+    <text x="16" y="23" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="23" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-01: Clock Tick Unit Time Range [PASS]</text>
+
+    <!-- Rule 2 -->
+    <rect x="0" y="44" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="63" r="7" fill="#10b981" />
+    <text x="16" y="67" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="67" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-02: Calibration / Sync Pulse Ratio (56t) [PASS]</text>
+
+    <!-- Rule 3 -->
+    <rect x="0" y="88" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="107" r="7" fill="#10b981" />
+    <text x="16" y="111" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="111" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-03: Nibble Pulse Width Bounds (12-27t) [PASS]</text>
+
+    <!-- Rule 4 -->
+    <rect x="0" y="132" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="151" r="7" fill="#10b981" />
+    <text x="16" y="155" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="155" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-04: Status &amp; Comm Nibble Semantics [PASS]</text>
+
+    <!-- Rule 5 -->
+    <rect x="0" y="176" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="195" r="7" fill="#10b981" />
+    <text x="16" y="199" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="199" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-05: Fast Channel Profile Bit-Depth [PASS]</text>
+
+    <!-- Rule 6 -->
+    <rect x="0" y="220" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="239" r="7" fill="#10b981" />
+    <text x="16" y="243" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="243" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-06: Appendix B CRC-4 Integrity [PASS]</text>
+
+    <!-- Rule 7 -->
+    <rect x="0" y="264" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="283" r="7" fill="#10b981" />
+    <text x="16" y="287" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="287" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-07: Minimum Low Period (&gt;= 4 ticks) [PASS]</text>
+
+    <!-- Rule 8 -->
+    <rect x="0" y="308" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="327" r="7" fill="#10b981" />
+    <text x="16" y="331" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="331" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-08: Pause Pulse Minimum Width (&gt;= 12t) [PASS]</text>
+
+    <!-- Rule 9 -->
+    <rect x="0" y="352" width="510" height="38" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1" />
+    <circle cx="20" cy="371" r="7" fill="#10b981" />
+    <text x="16" y="375" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">✓</text>
+    <text x="40" y="375" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-09: Total Frame Period Bounds [PASS]</text>
+
+    <!-- Rule 10 -->
+    <rect x="0" y="396" width="510" height="38" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="20" cy="415" r="7" fill="#38bdf8" />
+    <text x="16" y="419" fill="#0f172a" font-family="sans-serif" font-size="10" font-weight="bold">i</text>
+    <text x="40" y="419" fill="#f8fafc" font-family="monospace" font-size="12">RULE-SENT-10: Slow Serial Message Synchronization [PASS]</text>
+  </g>
+
+  <!-- Bottom Dissector Strip -->
+  <rect x="635" y="630" width="510" height="30" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+  <text x="645" y="650" fill="#94a3b8" font-family="monospace" font-size="11">SAE J2716 Protocol: SYNC(56t) | STATUS(12-27t) | DATA(12-27t)*6 | CRC(12-27t) | PAUSE</text>
+</svg>
